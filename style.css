@@ -35,3 +35,7 @@ a:hover {
     padding-bottom: 5px;
     
 }
+section {
+    margin: 80vh 0;
+    margin-bottom: 80vh;
+  }
