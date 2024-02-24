@@ -5,20 +5,20 @@
 }
 
 :root {
-    --cor01: #8FC1B5;
-    --cor02: #589A8D;
-    --cor03: #007566;
-    --cor04: #146551;
-    --cor05: #265C4B;
+    --cor01: #BFBFBF;
+    --cor02: #737373;
+    --cor03: #595959;
+    --cor04: #404040;
+    --cor05: #262626;
+    --cor06: #181818;
     --corBotaoSocial: #202020;
     --corBotaoSocialHover: whitesmoke;
-    --corBotaoSocialActive: #8FC1B5;
+    --corBotaoSocialActive: #737373;
 }
 
-body{
-    height: 1350px;
-    padding: 20px;
-  }
+body {
+    height: 1350px;    
+}
 
 .img-logo {
     width: 55px;
@@ -28,33 +28,56 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: var(--cor06);
     align-items: center;
     padding: 20px;
+    box-shadow: 0 2px 7px -3px black;
+    position: relative;
+    z-index: 1;
 }
 
-ul {
+header>nav {    
+    display: inline-block;   
+}
+
+header nav ul {
     display: flex;
     gap: 40px;
     list-style: none;
-    margin-right: 10rem;
+    margin-right: 3rem;
 }
 
-a {
+header li a {
     text-decoration: none;
     color: white;
     border: transparent;
 }
 
-a:hover {
+header li a:hover {
     border-bottom: 2px solid #CC9933;
     padding-bottom: 5px;
 
 }
 
+.bg-section-impar{   
+    position: relative;
+    z-index: 0; 
+    padding: 40px 80px;
+    margin: auto;
+    background-color: var(--cor01);
+}
+
+.bg-section-par{
+    position: relative;
+    z-index: 0; 
+    padding: 40px 80px;
+    margin: auto;
+    background-color: var(--corBotaoSocialHover);
+}
+
 section {
-    margin: 80vh 0;
-    margin-bottom: 80vh;
+    margin: 8vh 0;
+    margin-bottom: 16vh;
 }
 
 .carousel {
@@ -65,9 +88,9 @@ section {
     border-radius: 10px;
     text-align: center;
     background-color: var(--cor01);
-  }
-  
-  .containerCards {
+}
+
+.containerCards {
     min-width: min-content;
     display: flex;
     gap: 20px;
@@ -76,9 +99,9 @@ section {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--cor02);
-  }
-  
-  .cards {
+}
+
+.cards {
     position: relative;
     flex: 1;
     margin: 0 auto auto auto;
@@ -87,15 +110,15 @@ section {
     border-radius: 10px;
     min-height: 415px;
     background-image: linear-gradient(to top, var(--cor03), transparent);
-  }
-  
-  .cards>h2 {
+}
+
+.cards>h2 {
     width: 100%;
     font-size: 1.3em;
     margin-top: 30px;
-  }
-  
-  .imgPerfil {
+}
+
+.imgPerfil {
     overflow: hidden;
     position: relative;
     width: 150px;
@@ -104,18 +127,18 @@ section {
     margin: auto;
     border-radius: 50%;
     background-color: var(--cor01);
-  }
-  
-  .imgPerfil>img {
+}
+
+.imgPerfil>img {
     position: absolute;
     top: 50%;
     bottom: 50%;
     width: 150px;
     height: 150px;
     transform: translateX(-50%) translateY(-50%);
-  }
-  
-  .devContatos {
+}
+
+.devContatos {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -126,28 +149,28 @@ section {
     padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient(to bottom, var(--cor02), transparent);
-  }
-  
-  .devContatos svg {
+}
+
+.devContatos svg {
     width: 36px;
     height: 36px;
     fill: var(--corBotaoSocial);
     transition: fill 0.3s;
-  }
-  
-  .devContatos svg:hover {
+}
+
+.devContatos svg:hover {
     fill: var(--corBotaoSocialHover);
-  }
-  
-  .devContatos svg:active {
+}
+
+.devContatos svg:active {
     fill: var(--corBotaoSocialActive);
-  }
-  
-  .devContatos a {
+}
+
+.devContatos a {
     margin: auto;
-  }
-  
-  .prev {
+}
+
+.prev {
     border: none;
     background-color: transparent;
     position: absolute;
@@ -155,26 +178,26 @@ section {
     top: 50%;
     left: -20px;
     margin-left: 20px;
-  }
-  
-  .prev>a {
+}
+
+.prev>a {
     font-size: 3em;
     color: var(--corBotaoSocial);
     text-decoration: none;
-  }
-  
-  .prev>a:hover {
+}
+
+.prev>a:hover {
     font-size: 3em;
     transition: 0.3s;
     color: var(--cor05);
-  }
-  
-  .prev>a:active {
+}
+
+.prev>a:active {
     font-size: 3em;
     color: var(--cor01);
-  }
-  
-  .next {
+}
+
+.next {
     display: block;
     border: none;
     background-color: transparent;
@@ -183,21 +206,21 @@ section {
     top: 50%;
     right: 0;
     margin-left: 20px;
-  }
-  
-  .next>a {
+}
+
+.next>a {
     font-size: 3em;
     color: var(--corBotaoSocial);
     text-decoration: none;
-  }
-  
-  .next>a:hover {
+}
+
+.next>a:hover {
     font-size: 3em;
     transition: 0.3s;
     color: var(--cor05);
-  }
-  
-  .next>a:active {
+}
+
+.next>a:active {
     font-size: 3em;
     color: var(--cor01);
-  }
+}
