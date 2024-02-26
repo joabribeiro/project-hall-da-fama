@@ -17,7 +17,7 @@
 }
 
 body {
-    height: 1350px;    
+    height: 1350px;  
 }
 
 .img-logo {
@@ -75,9 +75,12 @@ header li a:hover {
     background-color: var(--corBotaoSocialHover);
 }
 
-section {
-    margin: 8vh 0;
-    margin-bottom: 16vh;
+#sobre {
+    margin-bottom: 80vh;
+}
+
+#hall_da_fama, #caridade, #previsaoDoTempo, #museStack {
+    margin-bottom: 10vh;
 }
 
 .carousel {
@@ -110,6 +113,8 @@ section {
     border-radius: 10px;
     min-height: 415px;
     background-image: linear-gradient(to top, var(--cor03), transparent);
+    color: white;
+    border: 1px solid white;
 }
 
 .cards>h2 {
@@ -149,6 +154,7 @@ section {
     padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient(to bottom, var(--cor02), transparent);
+    margin-bottom: 20px;
 }
 
 .devContatos svg {
@@ -223,4 +229,54 @@ section {
 .next>a:active {
     font-size: 3em;
     color: var(--cor01);
+}
+
+
+/* Adições Caio Rossi */
+.placeholder_img {
+    height: 30vh;
+    display: block;
+    margin: 2em auto;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0.5em;
+}
+
+#sobre h1 {
+    text-align: center;
+    margin-top: 10em;
+}
+
+#sobre p {
+    margin: 2em 30em;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.info-section, .contact-section, .social-section {
+    flex: 1;
+    margin-right: 20px;
+}
+  
+.social-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.social-section li {
+    margin-bottom: 8px;
+}
+  
+.copyright {
+    margin-top: 90px;
+    text-align: center;
 }
